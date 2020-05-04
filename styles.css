@@ -1,0 +1,50 @@
+:root {
+  --mainColor: hsl(220, 69%, 80%);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 72px;
+  background-color: #f5f7fa;
+}
+
+.highlight {
+  border-bottom: 4px solid hsl(220, 69%, 80%);
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  color: #212934;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: #404b5a;
+}
+
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0px 0px;
+  color: #404b5a;
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+a:hover {
+  background-size: 4px 50px;
+}
